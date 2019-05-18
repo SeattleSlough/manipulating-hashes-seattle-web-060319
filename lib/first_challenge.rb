@@ -18,7 +18,7 @@ def first_challenge
   #your code here
   contacts.each do |name, data|
     data.each do |attribute, value|
-      if is_array(value)
+      if value.kind_of?(Array)
         value.delete_if {|flavor| flavor == "strawberry"}
       end
     end
