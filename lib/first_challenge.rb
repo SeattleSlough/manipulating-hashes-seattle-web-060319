@@ -18,7 +18,8 @@ def first_challenge
   #your code here
   contacts.each do |name, data|
     data.each do |attribute, value|
-      value.each do |flavor|
+      if is_array(value)
+        value.each do |flavor|
       if value == :favorite_icecrem_flavors 
         flavor.delete_if {|element| element == "strawberry"}
       end
