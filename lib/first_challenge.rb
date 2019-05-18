@@ -23,6 +23,7 @@ def first_challenge
         flavor.delete_if {|element| element == "strawberry"}
       end
     end
+    end
   end
   #remember to return your newly altered contacts hash!
   contacts
